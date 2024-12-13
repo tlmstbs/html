@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрация Materialize</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="main.css" rel="stylesheet">
+
+<Style>
+    /* СТИЛИ В ФАЙЛЕ MAIN.CSS */
+</Style>
+
+</head>
+<body>
+
+    <header>
+        <nav class="pink lighten-3" >
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">Tora.Lash</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contact">Вопрос</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about" class="section">
+            <h2>Обо мне</h2>
+            <div class="row valign-wrapper logo">
+                <div class="logo">
+
+                    <img src="./photo/vika.jpg" alt="Фото лэшмейкера" class="responsive-img circle" style="width:200px; height:200px;">
+                </div>
+                
+            </div>
+            <div class="col s12 m8">
+                <p style="font-size: 1.5rem;">Привет! Я профессиональный лэшмейкер с многолетним опытом в области улучшения естественной красоты. Моя цель — создавать индивидуальные образы, которые дарят уверенность и сияние.</p>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Мои услуги</h2>
+            <!-- Раскрывается с помощью JS в конце кода -->
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>Классическое наращивание ресниц</div>
+                    <div class="collapsible-body"><p>Природный вид и акцент на естественную красоту ваших глаз.</p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>Объёмное наращивание ресниц</div>
+                    <div class="collapsible-body"><p>Для тех, кто хочет добавить выразительности и драматизма.</p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>Ламинирование ресниц</div>
+                    <div class="collapsible-body"><p>Идеальный выбор для питания и ухода за вашими ресницами.</p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">expand_more</i>Окрашивание ресниц</div>
+                    <div class="collapsible-body"><p>Долговременный насыщенный цвет без необходимости макияжа.</p></div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="portfolio " class="section">
+            <h2>Портфолио</h2>
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <img src="./photo/photo_2024-10-26_16-39-43.jpg" alt="Работа 1" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 m6 l4">
+                    <img src="./photo/photo_2024-11-19_23-27-50.jpg" alt="Работа 2" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 m6 l4">
+                    <img src="./photo/photo_2024-11-30_17-39-02.jpg" alt="Работа 3" class="responsive-img materialboxed">
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="section">
+            <h2>Отзывы</h2>
+            <div class="row">
+                <div class="col s12 m6">
+                    <blockquote>
+                        <p>"Прекрасная работа! Мои ресницы выглядят великолепно. Обязательно вернусь!"</p>
+                        <div class="rating">
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star_half</i>
+                        </div>
+                    </blockquote>
+                </div>
+                <div class="col s12 m6">
+                    <blockquote>
+                        <p>"Очень профессиональный подход и доброжелательная атмосфера. Рекомендую всем!"</p>
+                        <div class="rating">
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Остались вопросы?</h2>
+            <p style="font-size: 1.5rem;">Мы Вам напишем!</p>
+            <form>
+                <div class="input-field">
+                    <input id="name" type="text" class="validate" required>
+                    <label for="name">Имя</label>
+                    <span class="helper-text" data-error="Пожалуйста, введите имя"></span>
+                </div>
+                <div class="input-field">
+                    <input id="email" type="email" class="validate" required>
+                    <label for="email">Электронная почта</label>
+                    <span class="helper-text" data-error="Введите корректный email"></span>
+                </div>
+                <div class="input-field">
+                    <textarea id="message" class="materialize-textarea" required></textarea>
+                    <label for="message">Сообщение</label>
+                    <span class="helper-text" data-error="Сообщение не может быть пустым"></span>
+                </div>
+                <button class="btn pink lighten-3" type="submit">Отправить</button>
+            </form>
+        </section>       
+    </main>
+
+
+
+    <footer class="page-footer pink lighten-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h5 class="white-text">tora.lash</h5>
+                    <p class="grey-text text-lighten-4">Улучшение вашей естественной красоты — ресница за ресницей.</p>
+                    <div>
+                        <a href="https://www.instagram.com/tora.lash" class="grey-text text-lighten-3"><i class="material-icons"></i> Instagram</a>
+                        <a href="https://vk.com/tlmstbs" class="grey-text text-lighten-3"><i class="material-icons"></i> ВКонтакте</a>
+                        <a href="https://t.me/tora_lash" class="grey-text text-lighten-3">Telegram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2024 tora_lash
+                <a class="grey-text text-lighten-4 right" href="#top">Наверх</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elemsCollapsible = document.querySelectorAll('.collapsible');
+            M.Collapsible.init(elemsCollapsible);
+
+            var elemsMaterialBox = document.querySelectorAll('.materialboxed');
+            M.Materialbox.init(elemsMaterialBox);
+        });
+    </script>
+</body>
+</html>
